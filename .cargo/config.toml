@@ -1,0 +1,11 @@
+[build]
+target = ".cargo/i386-code16-boot-sector.json"
+
+[profile.dev]
+codegen-units = 2
+opt-level = "z"
+lto = true
+panic = "abort"
+
+[unstable]
+build-std = [ "core" ]
